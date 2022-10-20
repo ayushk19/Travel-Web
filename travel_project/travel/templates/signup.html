@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Signup</title>
+        {% load static %}
+        <link rel="StyleSheet" href="{% static 'signup.css' %}">
+        <script type="text/javascript">
+            function show(){
+                alert("Welcome");
+                alert("Your data Should be Stored....please remember your password");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrap">
+            <h2>Sign up here</h2>
+            <form method="POST" action="{% url 'travel_savesignup' %}" id="signup">
+                {% csrf_token %}
+                <input type="text" placeholder="First Name..." required name="s_fname">
+                <input type="text" placeholder="Last Name..." required name="s_lname">
+                <input type="email" placeholder="Email..." required name="s_email">
+                <input type="password" placeholder="Password..." required name="s_passwd">
+                <input type="submit" value="Submit" onclick="show();">
+            </form>
+        </div>
+    </body>
+</html>
