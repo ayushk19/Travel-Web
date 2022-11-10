@@ -359,9 +359,11 @@ button.filter-button:focus{
 #water-slider h3{
     font-size: 40px;
 }
-.item{
-    display: inline;
-}
+
+
+
+
+
 .owl-carousel{
     /* display: block !important; */
     display: flex;
