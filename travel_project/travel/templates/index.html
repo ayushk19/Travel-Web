@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
-    <title>Travel Website</title>
+    <title>Visivor</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;1,300&display=swap"
         rel="stylesheet">
     {% load static %}
+    <link rel="icon" href="{% static 'images/logo1.1.png' %}">
     <link type="text/css" rel="stylesheet" href="{% static 'index.css'%}">
 </head>
 
@@ -21,12 +22,15 @@
             <div class="menu-par">
                 <div class="logo-par">
                     <a href="index.html">
-                        <h2>Travel</h2>
+                        <img src="{% static 'images/logo1.1.png' %}" alt="" height="80px" width="130px">
+                        <!-- <h2>Visivor</h2> -->
                     </a>
                 </div>
                 <div class="nav">
                     <ul>
-                        <li><a class="menu-hover" href="#">Home</a></li>
+                        <li><a class="menu-hover" href="">Home</a></li>
+                        <li><a class="menu-hover" href="aboutus/">About Us</a></li>
+                        <li><a class="menu-hover" href="">Gallery</a></li>
                         <li><a class="menu-hover" href="contactus/">Contact Us</a></li>
                         <li><a class="menu-hover" href="login/">Login</a></li>
                         <li><a class="menu-hover" href="signup">SignUp</a></li>
@@ -50,7 +54,7 @@
             </div>
             <div class="video">
                 <video id="video" autoplay loop muted>
-                    <source src="{% static 'images/travel-video.mp4'%}" type="video/mp4" />
+                    <source src="{% static 'images/travel-chandigarh.mp4'%}" type="video/mp4" />
                 </video>
             </div>
         </div>
@@ -58,29 +62,32 @@
     <!-- Second Slides Section -->
     <section id="welcome-text" style="background-color: rgb(211, 206, 206);">
         <div class="container">
-            <h2>The Official Travel Site of the friendly Fiji Islands</h2>
-            <p>when an unknown printer took a gallery of type and scrambled it to make a type speicmen</p>
+            <h2>The Official Travel Site of the Chandigarh Tourism</h2>
+            <p>When an unknown printer took a gallery of type and scrambled it to make a type speicmen</p>
         </div>
     </section>
 
     <!-- Gallery Section Starts -->
-    <section id="gallery">
+    <section id="gallery" style="background-color: rgb(211, 206, 206);">
         <div class="container">
             <div class="row">
                 <div class="filter-gal-par">
                     <div class="gallery-item filter diving">
-                        <img src="{% static 'images/nature1.jpg' %}">
+                        <img src="{% static 'images/Rockgarden.jpg' %}">
                     </div>
                     <div class="gallery-item filter diving">
-                        <img src="{% static 'images/diving1.jpg' %}" alt="" class="img-responsive">
+                        <img src="{% static 'images/sukhnalake.jpg' %}" alt="" class="img-responsive">
                     </div>
                     <div class="gallery-item filter diving">
-                        <img src="{% static 'images/nature3.jpg' %}" alt="" class="img-responsive">
+                        <img src="{% static 'images/japanese.jpg' %}" alt="" class="img-responsive">
                     </div>
                     <div class="gallery-item filter health">
                         <img src="{% static 'images/nature2.jpg' %}" alt="" class="img-responsive">
                     </div>
-                    <div class="gallery-item filter health">static/
+                    <div class="gallery-item filter health">
+                        <img src="{% static 'images/diving3.jpg' %}" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter health">
                         <img src="{% static 'images/diving3.jpg' %}" alt="" class="img-responsive">
                     </div>
                     </div>
@@ -97,7 +104,7 @@
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="owl-img-par">
-                        <img src="images/slider/bangcok.jpg" alt="" class="img-responsive" />
+                        <img src="images/nature2.jpg" alt="" class="img-responsive" />
                         <div class="owl-img-info">
                             <h3>Bangkok</h3>
                             <p>THAILAND</p>
@@ -149,21 +156,21 @@
         <div class="container">
             <div class="footer-par">
                 <div class="footer-1 ">
-                    <h3 class="footer-logo-h">Travel</h3>
+                    <h3 class="footer-logo-h">Visivor</h3>
                 </div>
                 <div class="footer-1 footer-info">
-                    <h3>Tourism Fiji</h3>
+                    <h3>Tourism Chandigarh</h3>
                     <ul>
                         <li><a href="">Tourism </a></li>
-                        <li><a href="">Tourism Fiji nature</a></li>
-                        <li><a href="">Tourism Fiji Three</a></li>
+                        <li><a href="">Tourism Chandigarh nature</a></li>
+                        <li><a href="">Tourism Views</a></li>
                     </ul>
                 </div>
                 <div class="footer-1 footer-info">
                     <h3>Find Your Happy</h3>
                     <ul>
                         <li><a href="">Places</a></li>
-                        <li><a href="">Tourism Spots</a></li>
+                        <li><a href="">Tourism Stays</a></li>
                         <li><a href="">Tourism gallery</a></li>
                     </ul>
                 </div>
@@ -171,12 +178,12 @@
                     <h3>Need Help?</h3>
                     <ul>
                         <li><a href="">Contact Us</a></li>
-                        <li><a href="">Call</a></li>
+                        <li><a href="">About Us</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <p class="copyright">Created By Ayush</p>
+        <p class="copyright">Created By Ayush & Group</p>
     </footer>
 </body>
 
